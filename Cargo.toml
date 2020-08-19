@@ -13,13 +13,12 @@ categories = ["text-processing", "data-structures"]
 
 [badges]
 travis-ci = { repository = "cessen/ropey" }
+druid = { path = "../druid" }
 
 [dependencies]
 smallvec = "1"
-[dependencies.druid]
-git = "https://github.com/linebender/druid"
-# TODO: Allow for usage without druid
-rev="8600e42"
+
+
 
 
 [dev-dependencies]
