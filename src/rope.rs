@@ -14,8 +14,6 @@ use crate::str_utils::{
 };
 use crate::tree::{Count, Node, NodeChildren, TextInfo, MAX_BYTES};
 
-use druid;
-
 /// A utf8 text rope.
 ///
 /// The time complexity of nearly all edit and query operations on `Rope` are
