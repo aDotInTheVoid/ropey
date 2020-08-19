@@ -16,7 +16,10 @@ travis-ci = { repository = "cessen/ropey" }
 
 [dependencies]
 smallvec = "1"
-druid="0.6"
+[dependencies.druid]
+git = "https://github.com/linebender/druid"
+# TODO: Allow for usage without druid
+rev="8600e42"
 
 
 [dev-dependencies]
