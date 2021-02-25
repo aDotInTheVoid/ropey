@@ -78,7 +78,7 @@ use crate::tree::{Count, Node, NodeChildren, TextInfo, MAX_BYTES};
 /// The primary intended use-case for this feature is to allow asynchronous
 /// processing of `Rope`s.  For example, saving a large document to disk in a
 /// separate thread while the user continues to perform edits.
-#[derive(Clone)]
+#[derive(Clone, druid::Data)]
 pub struct Rope {
     pub(crate) root: Arc<Node>,
 }
